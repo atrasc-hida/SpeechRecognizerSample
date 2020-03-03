@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SFSpeechRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="41A-w7-5hk">
+                                <rect key="frame" x="349.5" y="200" width="111" height="680"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr5-z4-BD2">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="日本語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="japanese" id="044-0f-0wK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXB-iL-wF8">
+                                        <rect key="frame" x="0.0" y="85" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="英語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="english" id="dgc-LS-a2i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lur-2t-ZXn">
+                                        <rect key="frame" x="0.0" y="170" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="簡体字中国語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="simplified" id="PCK-v4-RL0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0u-oB-lXw">
+                                        <rect key="frame" x="0.0" y="255" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="繁体字中国語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="traditional" id="8lv-y4-c3U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-UM-Mtc">
+                                        <rect key="frame" x="0.0" y="340" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="韓国語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="korean" id="S0z-Fh-GIB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDE-Ne-5Jw">
+                                        <rect key="frame" x="0.0" y="425" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="ドイツ語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="german" id="Q9d-eI-fNJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y09-d9-2t7">
+                                        <rect key="frame" x="0.0" y="510" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="イタリア語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="italian" id="Wcc-Y5-HsW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-Xh-bIv">
+                                        <rect key="frame" x="0.0" y="595" width="111" height="85"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="ヒンディー語"/>
+                                        <connections>
+                                            <segue destination="8nu-Oo-RCn" kind="presentation" identifier="hindi" id="BUq-vm-fHN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41A-w7-5hk" secondAttribute="bottom" constant="200" id="AoE-GX-ohY"/>
+                            <constraint firstItem="41A-w7-5hk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Jdk-Xz-0qb"/>
+                            <constraint firstItem="41A-w7-5hk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NvB-It-EYa"/>
+                            <constraint firstItem="41A-w7-5hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VdV-Da-Lsf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="AR5-hl-Ua5">
+            <objects>
+                <viewController id="8nu-Oo-RCn" customClass="SecondViewController" customModule="SFSpeechRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i65-fK-z5w">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1007"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-CN-Ebp" customClass="CustomButton" customModule="SFSpeechRecognizer" customModuleProvider="target">
+                                <rect key="frame" x="296" y="483.5" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="82b-YN-SUy"/>
+                                    <constraint firstAttribute="width" constant="120" id="jSj-nx-OAT"/>
+                                </constraints>
+                                <state key="normal" title="音声入力開始"/>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="8nu-Oo-RCn" eventType="touchUpInside" id="LFJ-zH-Rup"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysb-uc-fDX">
+                                <rect key="frame" x="200" y="603.5" width="312" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="VXa-I2-vsH"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hR-oS-VoI">
+                                <rect key="frame" x="335" y="193" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IcZ-gQ-vAi" firstAttribute="trailing" secondItem="ysb-uc-fDX" secondAttribute="trailing" constant="200" id="0bn-oj-n0V"/>
+                            <constraint firstItem="cJX-CN-Ebp" firstAttribute="centerX" secondItem="i65-fK-z5w" secondAttribute="centerX" id="29P-Sb-lV4"/>
+                            <constraint firstItem="ysb-uc-fDX" firstAttribute="leading" secondItem="IcZ-gQ-vAi" secondAttribute="leading" constant="200" id="H55-xq-KLf"/>
+                            <constraint firstItem="ysb-uc-fDX" firstAttribute="centerX" secondItem="i65-fK-z5w" secondAttribute="centerX" id="aYd-Du-f71"/>
+                            <constraint firstItem="1hR-oS-VoI" firstAttribute="centerX" secondItem="i65-fK-z5w" secondAttribute="centerX" id="fsa-0v-uRQ"/>
+                            <constraint firstItem="1hR-oS-VoI" firstAttribute="centerY" secondItem="i65-fK-z5w" secondAttribute="centerY" constant="-300" id="pxg-kc-YKf"/>
+                            <constraint firstItem="cJX-CN-Ebp" firstAttribute="centerY" secondItem="i65-fK-z5w" secondAttribute="centerY" id="v3i-oZ-5qm"/>
+                            <constraint firstItem="ysb-uc-fDX" firstAttribute="centerY" secondItem="i65-fK-z5w" secondAttribute="centerY" constant="200" id="yA6-Du-o6f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IcZ-gQ-vAi"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="1hR-oS-VoI" id="WuZ-ac-Ow4"/>
+                        <outlet property="recordButton" destination="cJX-CN-Ebp" id="X4g-lM-AAf"/>
+                        <outlet property="textView" destination="ysb-uc-fDX" id="P30-SK-p4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUu-Kf-TvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="138"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="044-0f-0wK"/>
+    </inferredMetricsTieBreakers>
+</document>
